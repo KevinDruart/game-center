@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <h1 class="test"><%= pageTitle %></h1>
+  <p id="instructions">
+    <!-- Les instructions seront ajoutés ici dynamiquement -->
+  </p>
+  <!-- GAME -->
+  <div class="game-container">
+    <input type="text" id="guessInput" placeholder="Entrez votre guess" />
+    <button id="guessButton">Devinez</button>
+    <p id="message"></p>
+  </div>
+  <!-- GAME END -->
+  <!-- SCORES container -->
+  <div id="scoresContainer">
+    <h2>Scores</h2>
+    <ul id="scoresList">
+      <!-- Les scores seront ajoutés ici dynamiquement -->
+    </ul>
+  </div>
+  <!-- SCORES container END-->
+</div>
+<div>
+  <p>Ce jeu a ete designer par les <strong>mimirs</strong></p>
+</div>
+<%- include('partials/footer') %>

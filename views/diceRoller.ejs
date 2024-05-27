@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+<div class="container-dice-roller">
+    <header>
+        <form id="game-config">
+            <input type="range" id="dice-count-selector" value="1" min="1" max="5">
+            <output name="dice-count">1</output>
+            <button class="btn">Lancer les dés</button>
+        </form>
+    </header>
+    <!-- Eh toi là, inutile de modifier le HTML : l'objectif est d'insérer des élements via JS ! Bonne chance ! -->
+    <main id="app">
+        <div class="board" id="player"></div>
+        <div class="board" id="dealer"></div>
+    </main>
+</div>
+<div>
+    <p>Ce jeu a ete designer par les <strong>mimirs</strong></p>
+  </div>
+<%- include('partials/footer') %>
